@@ -1,15 +1,20 @@
 #include<stdio.h>
-#include<conio.h>
 int main()
 {
-	int first,second,*p,*q,*sum;
+	int *p,*q,first,second;
 	printf("Enter the first number:");
 	scanf("%d",&first);
 	printf("Enter the second number:");
 	scanf("%d",&second);
 	p=&first;
 	q=&second;
-	*sum=*p + *q;
-	printf("The sum of the entered number is =%d\n",sum);
-
+	if(*p>*q)
+	{
+		printf("The maximum number is %d",*p);
+	}
+	else
+	{
+		printf("The maximum number is %d",*q);
+	}
+	return 0;
 }
